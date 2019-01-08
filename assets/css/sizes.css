@@ -1,0 +1,24 @@
+.height100 {
+  min-height: 80vh;
+}
+.mt20 {
+	margin-top: 20px;
+}
+.mt30 {
+	margin-top: 30px;
+}
+.mt50{
+	margin-top: 50px;
+}
+.mb20 {
+	margin-bottom: 20px;
+} 
+.mb10{
+	margin-bottom: 10px;
+}
+.p20 {
+	padding: 20px;
+}
+.pl20 {
+	padding-left: 10%;
+}

@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PVQFN47');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Olimpus - Natación</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Atma" rel="stylesheet">
+
+    <!-- Custom -->
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/sizes.css">
+
+  </head>
+  <body data-spy="scroll" data-target="#mainNavigation" data-offset="0">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PVQFN47"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div id="load-screen"></div>
+
+    <button onclick="topFunction()" id="myBtn" title="Ir a inicio" class="btnTop" style="display: block;"><img src="./assets/img/arrow-up.png" class="image totop"></button>
+    <script>
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              document.getElementById("myBtn").style.display = "block";
+          } else {
+              document.getElementById("myBtn").style.display = "none";
+          }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+      }
+    </script>
+
+    <!-- Menú morado -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-olimpus" id="mainNavigation">
+      <a class="navbar-brand" href="#">
+        <img src="assets/img/arrow-up.png" width="25" height="25" alt="olimpus">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link" href="#nosotrosTitle">Quiénes somos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#misionTitle">Misión</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#programasTitle">Programas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#sucursalesTitle">Sucursales</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#blogTitle">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contactoTitle">Contacto</a>
+          </li>
+        </ul>
+      </div>
+
+    </nav>
+
+    <!-- Cover -->
+    <div class="mb-5" id="cover">
+      <video autoplay muted loop id="myVideo">
+        <source src="./assets/img/CoverVideo.mp4" type="video/mp4">
+      </video>
+      <div class="row logo-section">
+        <img src="./assets/img/mainSection.png" class="img-fluid">
+        <div class="col-md-4 social-icons">
+          <a href="https://www.facebook.com/OlimpusNatacion/" target="_blank">
+          <img class="social-item" src="./assets/img/fb.png"/></a>
+          <a href="https://twitter.com/OlimpusNatacion" target="_blank">
+            <img class="social-item" src="./assets/img/tw.png"/></a>
+          <a href="#" target="_blank">
+            <img class="social-item" src="./assets/img/yt.png"/></a>
+          <a href="https://www.instagram.com/olimpusnatacion/" target="_blank">
+            <img class="social-item" src="./assets/img/insta.png"/></a>
+        </div>
+      </div>
+    </div>
+
+    <div id="mainContainer" class="container">
+
+      <!--Quienes somos-->
+      <div class="mb-5" id="nosotros">
+        <div class="text-description">
+          <h1 id="nosotrosTitle">Hacemos de nadar tu mejor experiencia</h1>
+          <p class="lead">Somos una escuela única con más de 23 años compartiendo nuestra pasión por el agua y la natación. Queremos compartir todos los beneficios que la natación te da en cualquier etapa de vida- desde bebé hasta tercera edad: empezando por ser un seguro de vida, el medio natural para el mejor desarrollo integral del bebé, un excelente deporte, salud, disciplina, buenos hábitos e increíbles experiencias, rodeado por gente sana.<p>
+          <p class="lead">¡Sumérgete en nuestro amor por el agua!</p>
+        </div>
+
+        <div class="card-deck">
+
+          <div class="card shadow-sm" onclick="javascript:location.href='./index.html#sucursales'">
+            <img class="card-img-top" src="assets/img/instalaciones.jpg" alt="las mejores instalaciones">
+            <div class="card-header qitem-1-title text-center">
+              <h5>Las mejores instalaciones</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Alberca Techada</li>
+              <li class="list-group-item">Temperatura ideal para aprender de 31- 32º C</li>
+              <li class="list-group-item">Alberca de chiquitines*</li>
+              <li class="list-group-item">Vestidores con área de bebés</li>
+              <li class="list-group-item">Alta tecnología de filtrado</li>
+            </ul>
+          </div>
+
+          <div class="card shadow-sm" onclick="javascript:location.href='./index.html#programas'">
+            <img class="card-img-top" src="assets/img/nuestroprograma.jpg" alt="excelentes programas">
+            <div class="card-header qitem-2-title text-center">
+              <h5>Excelentes programas</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Baby Olimpus - De 6 meses a 5 años</li>
+              <li class="list-group-item">Olimpus - Mas de 3 años</li>
+              <li class="list-group-item">Nado Seguro Olimpus</li>
+              <li class="list-group-item">Material lúdico importado</li>
+            </ul>
+          </div>
+
+          <div class="card shadow-sm" onclick="javascript:location.href='./quienessomos.html'">
+            <img class="card-img-top" src="assets/img/equipotrabajo.jpg" alt="equipo de profesionales">
+            <div class="card-header qitem-3-title text-center">
+              <h5>Equipo de profesionales</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Capacitación técnica, pedagógica y de seguridad</li>
+              <li class="list-group-item">Certificaciones de la USSSA</li>
+              <li class="list-group-item">Miembros de la USSSA desde 1995 y de Swim Australia</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Apasionados hasta la última gota -->
+      <div class="mb-5 height100" id="mision">
+        <div class="row">
+          <h1 id="misionTitle">Nuestra misión: <br>Inspirar con cada brazada vidas más seguras, saludables y felices.</h1>
+          <h2 class="light-purple strong subtitle mt30">Nuestros valores:</h2>
+          <div class="content-gota mt20">
+            <div>
+              <ul>
+                <li>
+                  <h3 class="purple strong">Pasión que hace olas</h3>
+                  <p>Somos apasionados de la natación porque nos permite transformar vidas con cada brazada. Cuando enseñamos a nadar estamos salvado vidas, dando salud y felicidad. Contagiamos esta pasión salpicando nuestra mejor actitud hasta la última gota.</p>
+                </li>
+                <li>
+                  <h3 class="purple strong">naDARTE</h3>
+                  <p>Nos gusta naDARNOS a la gente, ayudarlos, atenderlos. Todos somos importantes: saluda, sonríe, sé amable y ayuda. Estar para el otro, es nuestra medalla.</p>
+                </li>
+                <li>
+                  <h3 class="purple strong">Un relevo de pódium</h3>
+                  <p>Somos un equipo y solo trabajando juntos seremos un equipo ganador. Si gana el equipo Olimpus, ganamos todos. Cada ola que generamos tiene impacto en toda la alberca.</p>
+                </li>
+                <li>
+                  <h3 class="purple strong">Nadamos nuestro mejor estilo</h3>
+                  <p>Si hacemos algo, lo hacemos BIEN. Damos ese EXTRA en lo ORDINARIO, porque así nos gusta ser. Somos la mejor versión de nosotros mismos y agentes de cambio. Impactamos muchas vidas y somos ejemplo de todos.</p>
+                </li>
+                <li>
+                  <h3 class="purple strong">Cada día es una inaguración</h3>
+                  <p>Cada día recibimos a nuestros alumnos, familias y colaboradores con nuestra mejor sonrisa, cuidando cada detalle. Gracias a ellos tenemos un trabajo que nos hace felices y orgullosos de transformar vidas.</p>
+                </li>
+                <li>
+                  <h3 class="purple strong">¡Sumérgete en el juego y la diversión!</h3>
+                  <p>Cuando aprendes jugando y disfrutando, nunca lo olvidas. Por eso así son nuestros programas y materiales. Juega, diviértete, disfruta lo que haces y enseña de la misma manera.</p>
+                </li>
+              </ul>
+              <h3 class="purple strong mb20">¡Gracias por ser parte de Olimpus!</h3>
+            </div>
+            <div>
+              <img src="assets/img/apasionados.jpg" class="img-responsive" align="Bebé nadando">
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Programas -->
+      <div class="mb-5" id="programas">
+        <div class="text-description">
+          <h1 id="programasTitle">Excelentes programas de enseñanza</h1>
+          <p class="lead">Todo se trata de gozar el agua. Nuestros programas de enseñanza, Baby Olimpus y Olimpus, están basados en habilidades, lo que permite a cada alumno llevar su propio ritmo. Gracias a esto, nuestro proceso de aprendizaje inicia de forma personalizada, haciéndolo más efectivo que cualquier otro. Además, tenemos un enfoque en la seguridad acuática, a través de nuestro sistema NSO: Nado Seguro Olimpus.<p>
+        </div>
+
+        <div class="card-deck">
+
+          <div class="card shadow-sm" onclick="javascript:location.href='./bebes.html'">
+            <img class="card-img-top" src="assets/img/bebe.jpg" alt="bebés">
+            <div class="card-header pitem-1-title text-center">
+              <h5>Bebés</h5>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                El objetivo es la seguridad acuática, el desarrollo integral y la estimulación de tu bebé en el agua. Se logrará el libre movimiento que le ayuda a generar conexiones neuronales, la flotabilidad, la respiración, el balance y el desplazamiento en el agua.
+              </p>
+            </div>
+          </div>
+
+          <div class="card shadow-sm" onclick="javascript:location.href='./ninos.html'">
+            <img class="card-img-top" src="assets/img/nino.jpg" alt="niños">
+            <div class="card-header pitem-2-title text-center">
+              <h5>Niños</h5>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                Diseñado para niños de 2.6 años en adelante, el Programa Olimpus es progresivo y se basa en las habilidades dominadas, permitiendo a cada niño llevar su propio ritmo en un proceso de aprendizaje más personalizado y, por lo tanto, más efectivo.
+              </p>
+            </div>
+          </div>
+
+          <div class="card shadow-sm" onclick="javascript:location.href='./asultos.html'">
+            <img class="card-img-top" src="assets/img/adulto.jpg" alt="adultos">
+            <div class="card-header pitem-3-title text-center">
+              <h5>Adultos</h5>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                Desarrollamos un programa basado en tus objetivos / tiempos de competencia, ya sean triatlones, competencias másters, etc.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Sucursales -->
+      <div class="mb-5" id="sucursales">
+        <div class="text-description">
+          <h1 id="sucursalesTitle">Sucursales</h1>
+        </div>
+        <div class="card-deck">
+
+          <div class="card shadow-sm">
+            <div id="sucursalJuriquillaCarousel" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#sucursalJuriquillaCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#sucursalJuriquillaCarousel" data-slide-to="1"></li>
+                <li data-target="#sucursalJuriquillaCarousel" data-slide-to="2"></li>
+                <li data-target="#sucursalJuriquillaCarousel" data-slide-to="3"></li>
+                <li data-target="#sucursalJuriquillaCarousel" data-slide-to="4"></li>
+                <li data-target="#sucursalJuriquillaCarousel" data-slide-to="5"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block w-100 card-img-top" src="assets/img/sucursales/juriquilla02.jpg" alt="querétaro juriquilla">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 card-img-top" src="assets/img/sucursales/juriquilla03.jpg" alt="querétaro juriquilla">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 card-img-top" src="assets/img/sucursales/juriquilla04.jpg" alt="querétaro juriquilla">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 card-img-top" src="assets/img/sucursales/juriquilla05.jpg" alt="querétaro juriquilla">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 card-img-top" src="assets/img/sucursales/juriquilla06.jpg" alt="querétaro juriquilla">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 card-img-top" src="assets/img/sucursales/juriquilla07.jpg" alt="querétaro juriquilla">
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#sucursalJuriquillaCarousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#sucursalJuriquillaCarousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Siguiente</span>
+            </a>
+            <div class="card-header qitem-1-title text-center">
+              <h5>Querétaro - Juriquilla</h5>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                R.M. Clemencia Borja Taboada #518 Col. J. Acueducto C.P. 76230 Juriquilla, Querétaro.
+              </p>
+            </div>
+          </div>
+
+          <div class="card shadow-sm">
+            <div id="sucursalCorregidoraCarousel" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#sucursalCorregidoraCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#sucursalCorregidoraCarousel" data-slide-to="1"></li>
+                <li data-target="#sucursalCorregidoraCarousel" data-slide-to="2"></li>
+                <li data-target="#sucursalCorregidoraCarousel" data-slide-to="3"></li>
+                <li data-target="#sucursalCorregidoraCarousel" data-slide-to="4"></li>
+                <li data-target="#sucursalCorregidoraCarousel" data-slide-to="5"></li>
+                <li data-target="#sucursalCorregidoraCarousel" data-slide-to="6"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block w-100 card-img-top" src="assets/img/sucursales/corregidora01.jpg" alt="querétaro corregidora">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 card-img-top" src="assets/img/sucursales/corregidora02.jpg" alt="querétaro corregidora">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 card-img-top" src="assets/img/sucursales/corregidora03.jpg" alt="querétaro corregidora">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 card-img-top" src="assets/img/sucursales/corregidora04.jpg" alt="querétaro corregidora">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 card-img-top" src="assets/img/sucursales/corregidora05.jpg" alt="querétaro corregidora">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 card-img-top" src="assets/img/sucursales/corregidora06.jpg" alt="querétaro corregidora">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 card-img-top" src="assets/img/sucursales/corregidora07.jpg" alt="querétaro corregidora">
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#sucursalCorregidoraCarousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#sucursalCorregidoraCarousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Siguiente</span>
+            </a>
+            <div class="card-header qitem-2-title text-center">
+              <h5>Querétaro - Corregidora</h5>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                Av. Camino a Venegas #33 Col. Ejido el Retablo C.P. 76900 Corregidora, Querétaro.
+              </p>
+            </div>
+          </div>
+
+          <div class="card shadow-sm">
+            <div id="sucursalOjoDeAguaCarousel" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#sucursalOjoDeAguaCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#sucursalOjoDeAguaCarousel" data-slide-to="1"></li>
+                <li data-target="#sucursalOjoDeAguaCarousel" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block w-100 card-img-top" src="assets/img/sucursales/ojodeagua01.jpg" alt="ojo de agua">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 card-img-top" src="assets/img/sucursales/ojodeagua02.jpg" alt="ojo de agua">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 card-img-top" src="assets/img/sucursales/ojodeagua03.jpg" alt="ojo de agua">
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#sucursalOjoDeAguaCarousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#sucursalOjoDeAguaCarousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Siguiente</span>
+            </a>
+            <div class="card-header qitem-3-title text-center">
+              <h5>Edo. de Méx. - Hda. Ojo de Agua</h5>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                Paseo de la Candelaria Mz. 67 L7 12 Col. Hacienda Ojo de Agua C.P. 55770 Tecámac, Edo. de México.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Blog y noticias-->
+      <div class="mb-5" id="blog">
+        <div class="text-description">
+          <h1 id="blogTitle">Blog y noticias</h1>
+        </div>
+
+        <div class="card mb-3 shadow-sm">
+          <img class="card-img-top" src="blog/img/14.jpg" alt="parámetros de excelencia al nadar">
+          <div class="card-body">
+            <h5 class="card-title">Parámetros de Excelencia al nadar, Y tú… ¿qué tan bien lo haces?</h5>
+            <p class="card-text">¡Nuestra Semana de Parámetros de Excelencia Olimpus ya está aquí! Probablemente te preguntarás ¿qué es, para qué sirve y quién participa?</p>
+            <a href="blog/14.html" class="card-link">Leer más</a>
+          </div>
+        </div>
+
+        <div class="card-deck">
+
+          <div class="card shadow-sm" onclick="javascript:location.href='./ninos.html'">
+            <img class="card-img-top" src="blog/img/12.jpg" alt="niños">
+            <div class="card-body">
+              <h5 class="card-title">¿Cómo preparar a mis hijos para las Vacaciones de Verano?</h5>
+              <p class="card-text">
+                ¡La emoción por las vacaciones ya está aquí! Estamos a muy pocas semanas de poder disfrutar en familia unos días de descanso y diversión.
+              </p>
+              <a href="blog/12.html" class="card-link">Leer más</a>
+            </div>
+          </div>
+
+          <div class="card shadow-sm" onclick="javascript:location.href='./ninos.html'">
+            <img class="card-img-top" src="blog/img/13.jpg" alt="niños">
+            <div class="card-body">
+              <h5 class="card-title">Cómo afectan nuestras emociones al aprendizaje?</h5>
+              <p class="card-text">
+                Nuestras emociones se ven impactadas por las experiencias que vivimos en nuestro día a día. Del mismo modo, tienen un impacto en nuestra memoria.
+              </p>
+              <a href="blog/13.html" class="card-link">Leer más</a>
+            </div>
+          </div>
+
+        </div>
+
+        <a href="blog" class="btn btn-purple vermas">Leer más</a>
+      </div>
+
+      <!-- Contacto -->
+      <div class="section contacto height100" id="contacto">
+        <div class="container">
+          <h1 id="contactoTitle" class="text-center">Contáctanos</h1>
+          <form action="/contact.php" method="POST">
+            <div class="col-md-6 col-xs-12">
+              <!-- Text input-->
+              <div class="form-group">
+                <label class="col-md-12 control-label" for="textinput">Nombre*</label>
+                <div class="col-md-12">
+                <input id="name" name="name" type="text" placeholder="Nombre" class="form-control" required="">
+                </div>
+              </div>
+
+              <!-- Multiple Radios (inline) -->
+              <div class="form-group">
+                <label class="col-md-12 control-label" for="radios">¿Por qué medio prefieres que nos comuniquemos?</label>
+                <div class="col-md-12 mb10">
+                  <label class="radio-inline" for="radios-0">
+                    <input type="radio" name="radios" id="radios-0" class="radios" value="telefono">
+                    Teléfono
+                  </label>
+                  <label class="radio-inline" for="radios-1">
+                    <input type="radio" name="radios" id="radios-1" class="radios" value="email">
+                    Email
+                  </label>
+                </div>
+              </div>
+
+              <!-- Text input-->
+              <div class="form-group telefono-input" id="phone-div">
+                <label class="col-md-12 control-label" for="textinput">Teléfono*</label>
+                <div class="col-md-12">
+                <input id="phone" name="phone" type="text" placeholder="Teléfono" class="form-control phone">
+                </div>
+              </div>
+
+              <!-- Text input-->
+              <div class="form-group email-input" id="email-div">
+                <label class="col-md-12 control-label" for="textinput">Email*</label>
+                <div class="col-md-12">
+                <input id="email" name="mail" type="text" placeholder="Email" class="form-control email">
+                </div>
+              </div>
+
+              <!-- Select Basic-->
+              <div class="form-group">
+                <label class="col-md-12 control-label" for="sucursal">Sucursal de interés</label>
+                <div class="col-md-12">
+                  <select id="sucursal" name="sucursal" class="form-control">
+                    <option value="juriquilla">Juriquilla</option>
+                    <option value="corregidora">Corregidora</option>
+                    <option value="ojodeagua">Ojo de Agua</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-xs-12">
+              <!-- Multiple Checkboxes -->
+              <div class="form-group">
+                <label class="col-md-12 control-label" for="checkboxes">Servicio de interés</label>
+                <div class="col-md-12">
+                <div class="checkbox">
+                  <label for="checkboxes-0" class="checkbox-label">
+                    <input type="checkbox" name="service[]" id="bebes" value="bebes">
+                    Bebés
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label for="checkboxes-1" class="checkbox-label">
+                    <input type="checkbox" name="service[]" id="ninios" value="ninio">
+                    Niños
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label for="checkboxes-1" class="checkbox-label">
+                    <input type="checkbox" name="service[]" id="adultos" value="adultos">
+                    Jóvenes y adultos
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label for="checkboxes-1" class="checkbox-label">
+                    <input type="checkbox" name="service[]" id="embarazadas" value="embarazadas">
+                    Embarazadas
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label for="checkboxes-1" class="checkbox-label">
+                    <input type="checkbox" name="service[]" id="otro" value="otro">
+                    Otro
+                  </label>
+                </div>
+                </div>
+              </div>
+              <!-- Textarea -->
+              <div class="form-group">
+                <label class="col-md-12 control-label" for="textarea">Mensaje</label>
+                <div class="col-md-12">
+                  <textarea class="form-control" id="textarea" name="message" rows="4">Aqui...</textarea>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="col-md-12 mt20 wrapper">
+              <button id="submit" name="submit" type="submit" class="btn btn-purple">Enviar Mensaje</button>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- NewsLetter -->
+    <div class="section newsletter" id="newsletter">
+      <div class="container">
+        <h1 class="text-center newsletter-h1">Suscríbete a nuestro NewsLetter</h1>
+        <form>
+          <!-- Text input-->
+            <div class="form-group">
+              <div class="col-md-12">
+              <input id="email-news" name="email-news" type="text" placeholder="Email*" class="form-control" required="">
+              </div>
+            </div>
+            <div class="col-md-12 mt20 wrapper">
+            <button id="news" name="news" type="submit" class="btn btn-purple">Subscribirse</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Instagram -->
+    <script src="https://snapwidget.com/js/snapwidget.js"></script>
+    <iframe src="https://snapwidget.com/embed/447798" class="snapwidget-widget"
+    allowTransparency="true" frameborder="0" scrolling="no"
+    style="border:none; overflow:hidden; width:100%; "></iframe>
+
+    <div class="hidden-sm hidden-xs"><img src="./assets/img/ondita.png" class="ondita"></div>
+    <!-- Footer -->
+    <div class="section footer">
+      <div class="row">
+        <div class="col-md-4 col-xs-12">
+          <a href="https://www.facebook.com/OlimpusNatacion/" target="_blank">
+            <img class="social-footer" src="./assets/img/footer_fb.png"/></a>
+          <a href="https://twitter.com/OlimpusNatacion" target="_blank">
+            <img class="social-footer" src="./assets/img/footer_tw.png"/></a>
+          <a href="#" target="_blank">
+            <img class="social-footer" src="./assets/img/footer_yt.png"/></a>
+          <a href="https://www.instagram.com/olimpusnatacion/" target="_blank">
+            <img class="social-footer" src="./assets/img/footer_ins.png"/></a>
+        </div>
+      </div>
+      <div class="row">
+          <ul class="menu-footer">
+            <li><a href="#newsletter">Suscríbete</a></li>
+            <li><a href="https://app.jackrabbitclass.com/portal/ppLogin.asp?id=528866">Log In</a></li>
+            <li><a href="/preguntas_frecuentes"><p>Preguntas frecuentes</p></a></li>
+            <li><a href="/reglamento.pdf">Reglamento</a></li>
+          </ul>
+        </div>
+    </div>
+
+    <!-- SCRIPTS-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+      $(window).on('load', function(){
+          $('#load-screen').delay(1000).fadeIn(function(){$(this).remove()});
+      });
+
+      $(document).ready(function() {
+          document.getElementById("email-div").style.display = "none";
+          document.getElementById("phone-div").style.display = "none";
+      });
+
+      $(".radios" ).change(function() {
+        if($("#radios-1").is(":checked")){
+          document.getElementById("email-div").style.display = "block";
+          document.getElementById("phone-div").style.display = "none";
+          $('#email').removeAttr('required');
+          $('#phone').attr('required', 'required');
+          $('#phone').removeAttr('required');
+          $('#email').attr('required', 'required');
+        } else {
+          document.getElementById("email-div").style.display = "none";
+          document.getElementById("phone-div").style.display = "block";
+          $('#email').removeAttr('required');
+          $('#phone').attr('required', 'required');
+        }
+      });
+
+    </script>
+  </body>
+</html>
