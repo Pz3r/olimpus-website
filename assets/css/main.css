@@ -2,9 +2,11 @@
   --purple: #743089;
   --light-purple: #d3c2db;
   --orange: #EF9C2C;
+  --light-orange: #fae1bf;
   --aqua: #3FBAB2;
   --light-aqua: #c0e8e3;
   --blue: #005CB4;
+  --light-blue: #a3d1ff;
 
   --light-gray: #e9e9e9;
   --gray: #c9c9c9;
@@ -50,6 +52,26 @@ a:focus, a:hover {
     color: var(--purple);
     text-decoration: none;
     font-weight: bold;
+}
+
+.formButton {
+  margin-top: 12px;
+}
+
+.light-purple-bg {
+  background-color: var(--light-purple);
+}
+
+.light-aqua-bg {
+  background-color: var(--light-aqua);
+}
+
+.light-blue-bg {
+  background-color: var(--light-blue);
+}
+
+.light-orange-bg {
+  background-color: var(--light-orange);
 }
 
 #load-screen {
@@ -156,6 +178,53 @@ a:focus, a:hover {
     position: relative;
     z-index: -99;
     width: 100vw;
+}
+
+body .landing {
+  position: relative;
+  top: 0;
+  left: 0:
+}
+
+body .landing video {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  object-fit: cover;
+}
+
+body .landing .olimpusBanner {
+  position: absolute;
+  top: 48px;
+  left: 0;
+}
+
+body .landing .socialNetworks {
+  position: absolute;
+  top: 66px;
+  left: 16px;
+}
+
+.socialIconContainer {
+  width: 48px;
+  height: 48px;
+  margin-right: 6px;
+}
+
+.socialIcon {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 42px;
+  height: auto;
+}
+
+.socialIcon:hover {
+  width: 48px;
+  height: auto;
 }
 
 .logo-section {
@@ -751,8 +820,9 @@ textarea {
 
 }
 
-#mainContainer {
-  padding-top: 0px;
+.anchor {
+  height: 48px;
+  margin-bottom: 12px;
 }
 
 .bg-olimpus {

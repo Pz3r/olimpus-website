@@ -71,22 +71,25 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="nav nav-pills">
           <li class="nav-item">
-            <a class="nav-link" href="#nosotrosTitle">Quiénes somos</a>
+            <a class="nav-link" href="#nosotrosAnchor">Quiénes somos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#misionTitle">Misión</a>
+            <a class="nav-link" href="#misionAnchor">Misión</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#programasTitle">Programas</a>
+            <a class="nav-link" href="#programasAnchor">Programas</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#sucursalesTitle">Sucursales</a>
+            <a class="nav-link" href="#sucursalesAnchor">Sucursales</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#blogTitle">Blog</a>
+            <a class="nav-link" href="#blogAnchor">Blog</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contactoTitle">Contacto</a>
+            <a class="nav-link" href="#contactoAnchor">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#suscribeteAnchor">Suscríbete</a>
           </li>
         </ul>
       </div>
@@ -94,32 +97,44 @@
     </nav>
 
     <!-- Cover -->
-    <div class="mb-5" id="cover">
-      <video autoplay muted loop id="myVideo">
-        <source src="./assets/img/CoverVideo.mp4" type="video/mp4">
-      </video>
-      <div class="row logo-section">
-        <img src="./assets/img/mainSection.png" class="img-fluid">
-        <div class="col-md-4 social-icons">
+    <section class="landing">
+      <img src="./assets/img/mainSection.png" class="img-fluid olimpusBanner" alt="Olimpus en las redes sociales">
+      <div class="socialNetworks">
+        <div class="socialIconContainer float-left text-center">
           <a href="https://www.facebook.com/OlimpusNatacion/" target="_blank">
-          <img class="social-item" src="./assets/img/fb.png"/></a>
+            <img src="./assets/img/fb.png" class="socialIcon" alt="olimpus en facebook">
+          </a>
+        </div>
+        <div class="socialIconContainer float-left text-center">
           <a href="https://twitter.com/OlimpusNatacion" target="_blank">
-            <img class="social-item" src="./assets/img/tw.png"/></a>
+            <img src="./assets/img/tw.png" class="socialIcon" alt="olimpus en twitter">
+          </a>
+        </div>
+        <div class="socialIconContainer float-left text-center">
           <a href="#" target="_blank">
-            <img class="social-item" src="./assets/img/yt.png"/></a>
+            <img src="./assets/img/yt.png" class="socialIcon" alt="olimpus en youtube">
+          </a>
+        </div>
+        <div class="socialIconContainer float-left text-center">
           <a href="https://www.instagram.com/olimpusnatacion/" target="_blank">
-            <img class="social-item" src="./assets/img/insta.png"/></a>
+            <img src="./assets/img/insta.png" class="socialIcon" alt="olimpus en instagram">
+          </a>
         </div>
       </div>
-    </div>
+      <video autoplay loop muted>
+        <source src="./assets/img/CoverVideo.mp4" type="video/mp4">
+      </video>
+    </section>
 
     <div id="mainContainer" class="container">
 
       <!--Quienes somos-->
-      <div class="mb-5" id="nosotros">
+      <div id="nosotrosAnchor" class="anchor"></div>
+      <div id="nosotros">
         <div class="text-description wow fadeInRight">
           <h1 id="nosotrosTitle">Hacemos de nadar tu mejor experiencia</h1>
-          <p class="lead">Somos una escuela única con más de 23 años compartiendo nuestra pasión por el agua y la natación. Queremos compartir todos los beneficios que la natación te da en cualquier etapa de vida- desde bebé hasta tercera edad: empezando por ser un seguro de vida, el medio natural para el mejor desarrollo integral del bebé, un excelente deporte, salud, disciplina, buenos hábitos e increíbles experiencias, rodeado por gente sana.<p>
+          <p class="lead">Somos una escuela única con 25 años compartiendo nuestra pasión por el agua y la natación.</p>
+          <p class="lead">Queremos compartir todos los beneficios que la natación te brinda en cada etapa de tu vida. Al nadar estás más seguro, más saludable y más feliz. Además, es un seguro de vida y te ayuda a un desarrollo integral: a nivel físico te da más fuerza, energía y salud; a nivel mental más conexiones neuronales; y a nivel emocional te brinda más seguridad, confianza y disciplina.</p>
           <p class="lead">¡Sumérgete en nuestro amor por el agua!</p>
         </div>
 
@@ -130,13 +145,13 @@
             <div class="card-header qitem-1-title text-center">
               <h5>Las mejores instalaciones</h5>
             </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Alberca Techada</li>
-              <li class="list-group-item">Temperatura ideal para aprender de 31- 32º C</li>
-              <li class="list-group-item">Alberca de chiquitines*</li>
-              <li class="list-group-item">Vestidores con área de bebés</li>
-              <li class="list-group-item">Alta tecnología de filtrado</li>
-            </ul>
+            <div class="card-body light-purple-bg">
+              <p class="card-text">Alberca Techada</p>
+              <p class="card-text">Temperatura ideal para aprender de 32º C</p>
+              <p class="card-text">Alberca de chiquitines*</p>
+              <p class="card-text">Vestidores con área de bebés</p>
+              <p class="card-text">Alta tecnología de filtrado</p>
+            </div>
           </div>
 
           <div class="card shadow-sm wow bounceInUp" onclick="javascript:location.href='./index.html#programas'">
@@ -144,12 +159,12 @@
             <div class="card-header qitem-2-title text-center">
               <h5>Excelentes programas</h5>
             </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Baby Olimpus - De 6 meses a 5 años</li>
-              <li class="list-group-item">Olimpus - Mas de 3 años</li>
-              <li class="list-group-item">Nado Seguro Olimpus</li>
-              <li class="list-group-item">Material lúdico importado</li>
-            </ul>
+            <div class="card-body light-aqua-bg">
+              <p class="card-text">Programa Baby Olimpus - De 4 meses a 3 años</p>
+              <p class="card-text">Programa Olimpus - A partir de los 3 años</p>
+              <p class="card-text">Nado Seguro Olimpus - NSO</p>
+              <p class="card-text">Innovador material lúdico</p>
+            </div>
           </div>
 
           <div class="card shadow-sm wow bounceInUp" onclick="javascript:location.href='./quienessomos.html'">
@@ -157,11 +172,12 @@
             <div class="card-header qitem-3-title text-center">
               <h5>Equipo de profesionales</h5>
             </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Capacitación técnica, pedagógica y de seguridad</li>
-              <li class="list-group-item">Certificaciones de la USSSA</li>
-              <li class="list-group-item">Miembros de la USSSA desde 1995 y de Swim Australia</li>
-            </ul>
+            <div class="card-body light-blue-bg">
+              <p class="card-text">Capacitación técnica, pedagógica y de seguridad</p>
+              <p class="card-text">Certificaciones de la USSSA</p>
+              <p class="card-text">Miembros de la USSSA desde 1995 y de Swim Australia</p>
+              <p class="card-text">Certificaciones de Primero Auxilios y RCP</p>
+            </div>
           </div>
 
         </div>
@@ -169,7 +185,8 @@
       </div>
 
       <!-- Apasionados hasta la última gota -->
-      <div class="mb-5 height100" id="mision">
+      <div id="misionAnchor" class="anchor"></div>
+      <div class="height100" id="mision">
         <div class="row">
           <h1 id="misionTitle" class="wow lightSpeedIn">Nuestra misión: <br>Inspirar con cada brazada vidas más seguras, saludables y felices.</h1>
           <h2 class="light-purple subtitle mt30">Nuestros valores:</h2>
@@ -212,56 +229,80 @@
       </div>
 
       <!-- Programas -->
-      <div class="mb-5" id="programas">
+      <div id="programasAnchor" class="anchor"></div>
+      <div id="programas">
         <div class="text-description wow fadeInRight">
           <h1 id="programasTitle">Excelentes programas de enseñanza</h1>
-          <p class="lead">Todo se trata de gozar el agua. Nuestros programas de enseñanza, Baby Olimpus y Olimpus, están basados en habilidades, lo que permite a cada alumno llevar su propio ritmo. Gracias a esto, nuestro proceso de aprendizaje inicia de forma personalizada, haciéndolo más efectivo que cualquier otro. Además, tenemos un enfoque en la seguridad acuática, a través de nuestro sistema NSO: Nado Seguro Olimpus.<p>
+          <p class="lead">¡Todo se trata de gozar el agua! Nuestros programas de enseñanza están basados en habilidades. Gracias a esto, nuestro proceso de aprendizaje inicia de forma personalizada y permite a cada alumno avanzar a su propio ritmo. Además, tenemos un enfoque en la seguridad acuática, a través de nuestro sistema de Nado Seguro Olimpus – NSO.<p>
+        </div>
+
+        <div class="card-deck mb-3">
+
+
+            <div class="card shadow-sm wow bounceInUp" onclick="javascript:location.href='./bebes.html'">
+              <img class="card-img-top" src="assets/img/bebe.jpg" alt="bebés">
+              <div class="card-header pitem-1-title text-center">
+                <h5>Bebés (4 meses a 3 años)</h5>
+              </div>
+              <div class="card-body light-orange-bg">
+                <p class="card-text">
+                  El objetivo es la seguridad acuática (a través del sistema de Nado Seguro Olimpus), el desarrollo integral, así como la estimulación de tu bebé en el agua.
+                </p>
+              </div>
+            </div>
+
+
+
+            <div class="card shadow-sm wow bounceInUp" onclick="javascript:location.href='./ninos.html'">
+              <img class="card-img-top" src="assets/img/nino.jpg" alt="niños">
+              <div class="card-header pitem-2-title text-center">
+                <h5>Niños (3 a 15 años)</h5>
+              </div>
+              <div class="card-body light-aqua-bg">
+                <p class="card-text">
+                  El Programa Olimpus es progresivo y personalizado, hasta dominar los principios básicos de la natación, así como los 4 estilos completos: Dorso, crol, mariposa y pecho.
+                </p>
+              </div>
+            </div>
+
+
         </div>
 
         <div class="card-deck">
 
-          <div class="card shadow-sm wow bounceInUp" onclick="javascript:location.href='./bebes.html'">
-            <img class="card-img-top" src="assets/img/bebe.jpg" alt="bebés">
-            <div class="card-header pitem-1-title text-center">
-              <h5>Bebés</h5>
+            <div class="card shadow-sm wow bounceInUp" onclick="javascript:location.href='./asultos.html'">
+              <img class="card-img-top" src="assets/img/adulto.jpg" alt="adultos">
+              <div class="card-header pitem-3-title text-center">
+                <h5>Adultos (15 años en adelante)</h5>
+              </div>
+              <div class="card-body light-blue-bg">
+                <p class="card-text">
+                  El enfoque se ajusta al objetivo que tengas: Aprender a nadar, mantenerte activo y en forma, rehabilitación o entrenamiento para competencias, triatlón, másters, etc.
+                </p>
+              </div>
             </div>
-            <div class="card-body">
-              <p class="card-text">
-                El objetivo es la seguridad acuática, el desarrollo integral y la estimulación de tu bebé en el agua. Se logrará el libre movimiento que le ayuda a generar conexiones neuronales, la flotabilidad, la respiración, el balance y el desplazamiento en el agua.
-              </p>
-            </div>
-          </div>
 
-          <div class="card shadow-sm wow bounceInUp" onclick="javascript:location.href='./ninos.html'">
-            <img class="card-img-top" src="assets/img/nino.jpg" alt="niños">
-            <div class="card-header pitem-2-title text-center">
-              <h5>Niños</h5>
-            </div>
-            <div class="card-body">
-              <p class="card-text">
-                Diseñado para niños de 2.6 años en adelante, el Programa Olimpus es progresivo y se basa en las habilidades dominadas, permitiendo a cada niño llevar su propio ritmo en un proceso de aprendizaje más personalizado y, por lo tanto, más efectivo.
-              </p>
-            </div>
-          </div>
 
-          <div class="card shadow-sm wow bounceInUp" onclick="javascript:location.href='./asultos.html'">
-            <img class="card-img-top" src="assets/img/adulto.jpg" alt="adultos">
-            <div class="card-header pitem-3-title text-center">
-              <h5>Adultos</h5>
+
+            <div class="card shadow-sm wow bounceInUp" onclick="javascript:location.href='./asultos.html'">
+              <img class="card-img-top" src="assets/img/adulto.jpg" alt="adultos">
+              <div class="card-header qitem-1-title text-center">
+                <h5>Aquafitness (15 años en adelante)</h5>
+              </div>
+              <div class="card-body light-purple-bg">
+                <p class="card-text">
+                  Acondicionamiento en sesiones energéticas y divertidas. Ideal para mujeres embarazadas y adultos mayores, ya que al practicarlo se evita impacto en articulaciones.
+                </p>
+              </div>
             </div>
-            <div class="card-body">
-              <p class="card-text">
-                Desarrollamos un programa basado en tus objetivos / tiempos de competencia, ya sean triatlones, competencias másters, etc.
-              </p>
-            </div>
-          </div>
 
         </div>
 
       </div>
 
       <!-- Sucursales -->
-      <div class="mb-5" id="sucursales">
+      <div id="sucursalesAnchor" class="anchor"></div>
+      <div id="sucursales">
         <div class="text-description wow fadeInRight">
           <h1 id="sucursalesTitle" class="wow lightSpeedIn">Sucursales</h1>
         </div>
@@ -309,10 +350,14 @@
             <div class="card-header qitem-1-title text-center">
               <h5>Querétaro - Juriquilla</h5>
             </div>
-            <div class="card-body">
+            <div class="card-body light-purple-bg">
               <p class="card-text">
-                R.M. Clemencia Borja Taboada #518 Col. J. Acueducto C.P. 76230 Juriquilla, Querétaro.
+                R.M. Clemencia Borja Taboada #518 Col. Jurica Acueducto C.P. 76230 Juriquilla, Querétaro.
               </p>
+            </div>
+            <div class="card-footer">
+              <a href="tel:4422342228" class="card-link"><i class="fas fa-phone"></i>&nbsp; (442) 234-2228</a>
+              <a href="tel:4422199314" class="card-link"><i class="fab fa-whatsapp"></i>&nbsp; (442) 219-9314</a>
             </div>
           </div>
 
@@ -362,10 +407,14 @@
             <div class="card-header qitem-2-title text-center">
               <h5>Querétaro - Corregidora</h5>
             </div>
-            <div class="card-body">
+            <div class="card-body light-aqua-bg">
               <p class="card-text">
                 Av. Camino a Venegas #33 Col. Ejido el Retablo C.P. 76900 Corregidora, Querétaro.
               </p>
+            </div>
+            <div class="card-footer">
+              <a href="tel:4422342228" class="card-link"><i class="fas fa-phone"></i>&nbsp; (442) 384-0470</a>
+              <a href="tel:4422199314" class="card-link"><i class="fab fa-whatsapp"></i>&nbsp; (442) 186-4149</a>
             </div>
           </div>
 
@@ -399,10 +448,14 @@
             <div class="card-header qitem-3-title text-center">
               <h5>Edo. de Méx. - Hda. Ojo de Agua</h5>
             </div>
-            <div class="card-body">
+            <div class="card-body light-blue-bg">
               <p class="card-text">
-                Paseo de la Candelaria Mz. 67 L7 12 Col. Hacienda Ojo de Agua C.P. 55770 Tecámac, Edo. de México.
+                Paseo de la Candelaria Mz. 67 L 12 Col. Hacienda Ojo de Agua C.P. 55770 Tecámac, Edo. de México.
               </p>
+            </div>
+            <div class="card-footer">
+              <a href="tel:4422342228" class="card-link"><i class="fas fa-phone"></i>&nbsp; (442) 5932-2150</a>
+              <a href="tel:4422199314" class="card-link"><i class="fab fa-whatsapp"></i>&nbsp; (442) 1442-2046</a>
             </div>
           </div>
 
@@ -410,7 +463,8 @@
       </div>
 
       <!-- Blog y noticias-->
-      <div class="mb-5" id="blog">
+      <div id="blogAnchor" class="anchor"></div>
+      <div id="blog">
         <div class="text-description wow lightSpeedIn">
           <h1 id="blogTitle">Blog y noticias</h1>
         </div>
@@ -454,6 +508,7 @@
       </div>
 
       <!-- Contacto -->
+      <div id="contactoAnchor" class="anchor"></div>
       <div class="section contacto height100 wow fadeInUp" id="contacto">
         <div class="container">
           <h1 id="contactoTitle" class="text-center">Contáctanos</h1>
@@ -544,9 +599,18 @@
 
             </div>
 
+            <div class="form-row">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" value="otro" id="muestraCheck">
+                <label class="form-check-label" for="muestraCheck">
+                  Solicitar clase muestra
+                </label>
+              </div>
+            </div>
 
-            <button id="submit" name="submit" type="submit" class="btn btn-purple">Enviar Mensaje</button>
-
+            <div class="formButton">
+              <button id="submit" name="submit" type="submit" class="btn btn-purple">Enviar Mensaje</button>
+            </div>
 
           </form>
         </div>
@@ -555,6 +619,7 @@
 
 
     <!-- NewsLetter -->
+    <div id="suscribeteAnchor" class="anchor"></div>
     <div class="section newsletter" id="newsletter">
       <div class="container">
         <h1 class="text-center newsletter-h1">Suscríbete a nuestro NewsLetter</h1>
