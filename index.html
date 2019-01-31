@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <!-- Fonts -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Atma|Roboto" rel="stylesheet">
 
     <!-- Custom -->
@@ -30,6 +30,9 @@
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
     <link rel="stylesheet" type="text/css" href="assets/css/sizes.css">
 
+    <!-- Start of olimpus Zendesk Widget script -->
+    <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=2128194d-f6eb-465d-81a7-cd319b3c0fbf"> </script>
+    <!-- End of olimpus Zendesk Widget script -->
   </head>
   <body data-spy="scroll" data-target="#mainNavigation" data-offset="0">
     <!-- Google Tag Manager (noscript) -->
@@ -74,31 +77,40 @@
             <a class="nav-link" href="#nosotrosAnchor">Quiénes somos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#misionAnchor">Misión</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#programasAnchor">Programas</a>
+            <a class="nav-link" href="#programasAnchor">Servicios</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#sucursalesAnchor">Sucursales</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="#testimonialesAnchor">Testimoniales</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="#blogAnchor">Blog</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contactoAnchor">Contacto</a>
+            <a class="nav-link" href="#contactoAnchor">Agenda tu clase muestra</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#suscribeteAnchor">Suscríbete</a>
+            <a class="nav-link" href="preguntas_frecuentes.html">Preguntas frecuentes</a>
           </li>
         </ul>
       </div>
 
     </nav>
 
+    <!-- Sticky social media bar -->
+    <div class="icon-bar d-none d-md-block">
+      <a href="https://www.facebook.com/OlimpusNatacion/" target="_blank" class="facebook"><i class="fab fa-facebook"></i></a>
+      <a href="https://twitter.com/OlimpusNatacion" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com/olimpusnatacion/" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" target="_blank" class="youtube"><i class="fab fa-youtube"></i></a>
+    </div>
+
     <!-- Cover -->
-    <section class="landing">
-      <img src="./assets/img/mainSection.png" class="img-fluid olimpusBanner" alt="Olimpus en las redes sociales">
+    <section class="landing d-none d-md-block">
+      <img src="./assets/img/mainSection-25.png" class="img-fluid olimpusBanner" alt="Olimpus en las redes sociales">
+      <!--
       <div class="socialNetworks">
         <div class="socialIconContainer float-left text-center">
           <a href="https://www.facebook.com/OlimpusNatacion/" target="_blank">
@@ -121,6 +133,7 @@
           </a>
         </div>
       </div>
+      -->
       <video autoplay loop muted>
         <source src="./assets/img/CoverVideo.mp4" type="video/mp4">
       </video>
@@ -131,11 +144,11 @@
       <!--Quienes somos-->
       <div id="nosotrosAnchor" class="anchor"></div>
       <div id="nosotros">
-        <div class="text-description wow fadeInRight">
-          <h1 id="nosotrosTitle">Hacemos de nadar tu mejor experiencia</h1>
-          <p class="lead">Somos una escuela única con 25 años compartiendo nuestra pasión por el agua y la natación.</p>
-          <p class="lead">Queremos compartir todos los beneficios que la natación te brinda en cada etapa de tu vida. Al nadar estás más seguro, más saludable y más feliz. Además, es un seguro de vida y te ayuda a un desarrollo integral: a nivel físico te da más fuerza, energía y salud; a nivel mental más conexiones neuronales; y a nivel emocional te brinda más seguridad, confianza y disciplina.</p>
-          <p class="lead">¡Sumérgete en nuestro amor por el agua!</p>
+        <div class="text-description">
+          <h1 id="nosotrosTitle" class="wow jello">Hacemos de nadar tu mejor experiencia</h1>
+          <p class="lead wow fadeIn">Somos una escuela única con 25 años compartiendo nuestra pasión por el agua y la natación.</p>
+          <p class="lead wow fadeIn">Queremos compartir todos los beneficios que la natación te brinda en cada etapa de tu vida. Al nadar estás más seguro, más saludable y más feliz. Además, es un seguro de vida y te ayuda a un desarrollo integral: a nivel físico te da más fuerza, energía y salud; a nivel mental más conexiones neuronales; y a nivel emocional te brinda más seguridad, confianza y disciplina.</p>
+          <p class="lead wow fadeIn">¡Sumérgete en nuestro amor por el agua!</p>
         </div>
 
         <div class="card-deck">
@@ -186,115 +199,134 @@
 
       <!-- Apasionados hasta la última gota -->
       <div id="misionAnchor" class="anchor"></div>
-      <div class="height100" id="mision">
-        <div class="row">
-          <h1 id="misionTitle" class="wow lightSpeedIn">Nuestra misión: <br>Inspirar con cada brazada vidas más seguras, saludables y felices.</h1>
-          <h2 class="light-purple subtitle mt30">Nuestros valores:</h2>
-          <div class="content-gota mt20">
-            <div>
-              <ul>
-                <li>
-                  <h3 class="purple wow flipInY">Pasión que hace olas</h3>
-                  <p class="wow fadeIn">Somos apasionados de la natación porque nos permite transformar vidas con cada brazada. Cuando enseñamos a nadar estamos salvado vidas, dando salud y felicidad. Contagiamos esta pasión salpicando nuestra mejor actitud hasta la última gota.</p>
-                </li>
-                <li>
-                  <h3 class="purple wow flipInY">naDARTE</h3>
-                  <p class="wow fadeIn">Nos gusta naDARNOS a la gente, ayudarlos, atenderlos. Todos somos importantes: saluda, sonríe, sé amable y ayuda. Estar para el otro, es nuestra medalla.</p>
-                </li>
-                <li>
-                  <h3 class="purple wow flipInY">Un relevo de pódium</h3>
-                  <p class="wow fadeIn">Somos un equipo y solo trabajando juntos seremos un equipo ganador. Si gana el equipo Olimpus, ganamos todos. Cada ola que generamos tiene impacto en toda la alberca.</p>
-                </li>
-                <li>
-                  <h3 class="purple wow flipInY">Nadamos nuestro mejor estilo</h3>
-                  <p class="wow fadeIn">Si hacemos algo, lo hacemos BIEN. Damos ese EXTRA en lo ORDINARIO, porque así nos gusta ser. Somos la mejor versión de nosotros mismos y agentes de cambio. Impactamos muchas vidas y somos ejemplo de todos.</p>
-                </li>
-                <li>
-                  <h3 class="purple wow flipInY">Cada día es una inaguración</h3>
-                  <p class="wow fadeIn">Cada día recibimos a nuestros alumnos, familias y colaboradores con nuestra mejor sonrisa, cuidando cada detalle. Gracias a ellos tenemos un trabajo que nos hace felices y orgullosos de transformar vidas.</p>
-                </li>
-                <li>
-                  <h3 class="purple wow flipInY">¡Sumérgete en el juego y la diversión!</h3>
-                  <p class="wow fadeIn">Cuando aprendes jugando y disfrutando, nunca lo olvidas. Por eso así son nuestros programas y materiales. Juega, diviértete, disfruta lo que haces y enseña de la misma manera.</p>
-                </li>
-              </ul>
-              <h3 class="purple mb20 wow flipInY">¡Gracias por ser parte de Olimpus!</h3>
-            </div>
-            <div>
-              <img src="assets/img/apasionados.jpg" class="img-responsive" align="Bebé nadando">
-            </div>
-
-          </div>
+      <div id="mision">
+        <div class="text-center wow jello">
+          <h1 id="misionTitle">Misión y valores</h1>
         </div>
+
+        <img src="assets/img/mision.png" class="img-fluid mb-2 wow tada">
+
+        <div class="card-columns mb-2 d-none d-md-block">
+
+          <div class="card text-center text-white blue-bg wow flipInY">
+            <div class="card-body">
+              <h5 class="card-title">Pasión que hace olas</h5>
+              <p class="card-text">Somos apasionados de la natación porque nos permite transformar vidas con cada brazada.</p>
+            </div>
+          </div>
+
+          <div class="card text-center text-white aqua-bg wow flipInY">
+            <div class="card-body">
+              <h5 class="card-title">naDARTE</h5>
+              <p class="card-text">Nos gusta naDARNOS a la gente, ayudarlos, atenderlos.</p>
+            </div>
+          </div>
+
+          <div class="card text-center text-white orange-bg wow flipInY">
+            <div class="card-body">
+              <h5 class="card-title">Un relevo de pódium</h5>
+              <p class="card-text">Somos un equipo y solo trabajando juntos seremos un equipo ganador.</p>
+            </div>
+          </div>
+
+          <div class="card text-center text-white purple-bg wow flipInY">
+            <div class="card-body">
+              <h5 class="card-title">Nadamos nuestro mejor estilo</h5>
+              <p class="card-text">Damos ese EXTRA en lo ORDINARIO, somos la mejor versión de nosotros mismos.</p>
+            </div>
+          </div>
+
+          <div class="card text-center text-white blue-bg wow flipInY">
+            <div class="card-body">
+              <h5 class="card-title">Cada día es una inauguración</h5>
+              <p class="card-text">Cada día recibimos a nuestros alumnos, familias y colaboradores con nuestra mejor sonrisa, cuidando cada detalle.</p>
+            </div>
+          </div>
+
+          <div class="card text-center text-white orange-bg wow flipInY">
+            <div class="card-body">
+              <h5 class="card-title">¡Sumérgete en el juego y la diversión!</h5>
+              <p class="card-text">Cuando aprendes jugando y disfrutando, nunca lo olvidas.</p>
+            </div>
+          </div>
+
+        </div>
+
       </div>
 
       <!-- Programas -->
       <div id="programasAnchor" class="anchor"></div>
       <div id="programas">
-        <div class="text-description wow fadeInRight">
-          <h1 id="programasTitle">Excelentes programas de enseñanza</h1>
-          <p class="lead">¡Todo se trata de gozar el agua! Nuestros programas de enseñanza están basados en habilidades. Gracias a esto, nuestro proceso de aprendizaje inicia de forma personalizada y permite a cada alumno avanzar a su propio ritmo. Además, tenemos un enfoque en la seguridad acuática, a través de nuestro sistema de Nado Seguro Olimpus – NSO.<p>
+        <div class="text-description">
+          <h1 id="programasTitle" class="wow jello">Excelentes programas de enseñanza</h1>
+          <p class="lead wow fadeIn">¡Todo se trata de gozar el agua! Nuestros programas de enseñanza están basados en habilidades. Gracias a esto, nuestro proceso de aprendizaje inicia de forma personalizada y permite a cada alumno avanzar a su propio ritmo. Además, tenemos un enfoque en la seguridad acuática, a través de nuestro sistema de Nado Seguro Olimpus – NSO.<p>
         </div>
 
         <div class="card-deck mb-3">
 
-
-            <div class="card shadow-sm wow bounceInUp" onclick="javascript:location.href='./bebes.html'">
-              <img class="card-img-top" src="assets/img/bebe.jpg" alt="bebés">
-              <div class="card-header pitem-1-title text-center">
-                <h5>Bebés (4 meses a 3 años)</h5>
-              </div>
-              <div class="card-body light-orange-bg">
-                <p class="card-text">
-                  El objetivo es la seguridad acuática (a través del sistema de Nado Seguro Olimpus), el desarrollo integral, así como la estimulación de tu bebé en el agua.
-                </p>
-              </div>
+          <div class="card shadow-sm wow bounceInUp" onclick="javascript:location.href='./bebes.html'">
+            <img class="card-img-top" src="assets/img/bebe.jpg" alt="bebés">
+            <div class="card-header pitem-1-title text-center">
+              <h5>Bebés (4 meses a 3 años)</h5>
             </div>
-
-
-
-            <div class="card shadow-sm wow bounceInUp" onclick="javascript:location.href='./ninos.html'">
-              <img class="card-img-top" src="assets/img/nino.jpg" alt="niños">
-              <div class="card-header pitem-2-title text-center">
-                <h5>Niños (3 a 15 años)</h5>
-              </div>
-              <div class="card-body light-aqua-bg">
-                <p class="card-text">
-                  El Programa Olimpus es progresivo y personalizado, hasta dominar los principios básicos de la natación, así como los 4 estilos completos: Dorso, crol, mariposa y pecho.
-                </p>
-              </div>
+            <div class="card-body light-orange-bg">
+              <p class="card-text">
+                El objetivo es la seguridad acuática (a través del sistema de Nado Seguro Olimpus), el desarrollo integral, así como la estimulación de tu bebé en el agua.
+              </p>
             </div>
+            <div class="card-footer">
+              <a href="bebes.html" class="card-link"><i class="fas fa-swimmer"></i>&nbsp; Más información</a>
+            </div>
+          </div>
 
+          <div class="card shadow-sm wow bounceInUp" onclick="javascript:location.href='./ninos.html'">
+            <img class="card-img-top" src="assets/img/nino.jpg" alt="niños">
+            <div class="card-header pitem-2-title text-center">
+              <h5>Niños (3 a 15 años)</h5>
+            </div>
+            <div class="card-body light-aqua-bg">
+              <p class="card-text">
+                El Programa Olimpus es progresivo y personalizado, hasta dominar los principios básicos de la natación, así como los 4 estilos completos: Dorso, crol, mariposa y pecho.
+              </p>
+            </div>
+            <div class="card-footer">
+              <a href="ninos.html" class="card-link"><i class="fas fa-swimmer"></i>&nbsp; Más información</a>
+            </div>
+          </div>
 
         </div>
 
         <div class="card-deck">
 
-            <div class="card shadow-sm wow bounceInUp" onclick="javascript:location.href='./asultos.html'">
-              <img class="card-img-top" src="assets/img/adulto.jpg" alt="adultos">
-              <div class="card-header pitem-3-title text-center">
-                <h5>Adultos (15 años en adelante)</h5>
-              </div>
-              <div class="card-body light-blue-bg">
-                <p class="card-text">
-                  El enfoque se ajusta al objetivo que tengas: Aprender a nadar, mantenerte activo y en forma, rehabilitación o entrenamiento para competencias, triatlón, másters, etc.
-                </p>
-              </div>
+          <div class="card shadow-sm wow bounceInUp" onclick="javascript:location.href='./asultos.html'">
+            <img class="card-img-top" src="assets/img/adulto.jpg" alt="adultos">
+            <div class="card-header pitem-3-title text-center">
+              <h5>Adultos (15 años en adelante)</h5>
             </div>
-
-
-
-            <div class="card shadow-sm wow bounceInUp" onclick="javascript:location.href='./asultos.html'">
-              <img class="card-img-top" src="assets/img/adulto.jpg" alt="adultos">
-              <div class="card-header qitem-1-title text-center">
-                <h5>Aquafitness (15 años en adelante)</h5>
-              </div>
-              <div class="card-body light-purple-bg">
-                <p class="card-text">
-                  Acondicionamiento en sesiones energéticas y divertidas. Ideal para mujeres embarazadas y adultos mayores, ya que al practicarlo se evita impacto en articulaciones.
-                </p>
-              </div>
+            <div class="card-body light-blue-bg">
+              <p class="card-text">
+                El enfoque se ajusta al objetivo que tengas: Aprender a nadar, mantenerte activo y en forma, rehabilitación o entrenamiento para competencias, triatlón, másters, etc.
+              </p>
             </div>
+            <div class="card-footer">
+              <a href="adultos.html" class="card-link"><i class="fas fa-swimmer"></i>&nbsp; Más información</a>
+            </div>
+          </div>
+
+          <div class="card shadow-sm wow bounceInUp" onclick="javascript:location.href='./asultos.html'">
+            <img class="card-img-top" src="assets/img/aquafitness.jpg" alt="adultos">
+            <div class="card-header qitem-1-title text-center">
+              <h5>Aquafitness (15 años en adelante)</h5>
+            </div>
+            <div class="card-body light-purple-bg">
+              <p class="card-text">
+                Acondicionamiento en sesiones energéticas y divertidas. Ideal para mujeres embarazadas y adultos mayores, ya que al practicarlo se evita impacto en articulaciones.
+              </p>
+            </div>
+            <div class="card-footer">
+              <a href="aquafitness.html" class="card-link"><i class="fas fa-swimmer"></i>&nbsp; Más información</a>
+            </div>
+          </div>
 
         </div>
 
@@ -303,8 +335,8 @@
       <!-- Sucursales -->
       <div id="sucursalesAnchor" class="anchor"></div>
       <div id="sucursales">
-        <div class="text-description wow fadeInRight">
-          <h1 id="sucursalesTitle" class="wow lightSpeedIn">Sucursales</h1>
+        <div class="text-description">
+          <h1 id="sucursalesTitle" class="wow jello">Sucursales</h1>
         </div>
         <div class="card-deck">
 
@@ -352,12 +384,17 @@
             </div>
             <div class="card-body light-purple-bg">
               <p class="card-text">
-                R.M. Clemencia Borja Taboada #518 Col. Jurica Acueducto C.P. 76230 Juriquilla, Querétaro.
+                R.M. Clemencia Borja Taboada #518<br>
+                Col. Jurica Acueducto C.P. 76230<br>
+                Juriquilla, Querétaro.
               </p>
             </div>
             <div class="card-footer">
               <a href="tel:4422342228" class="card-link"><i class="fas fa-phone"></i>&nbsp; (442) 234-2228</a>
-              <a href="tel:4422199314" class="card-link"><i class="fab fa-whatsapp"></i>&nbsp; (442) 219-9314</a>
+              <a href="https://bit.ly/2FzjPvs" target="_blank" class="card-link"><i class="fab fa-whatsapp"></i>&nbsp; (442) 219-9314</a>
+            </div>
+            <div class="card-footer">
+              <a href="https://goo.gl/maps/L6iDyvs6dmo" target="_blank" class="card-link"><i class="fas fa-swimming-pool"></i>&nbsp; Cómo llegar</a>
             </div>
           </div>
 
@@ -409,12 +446,17 @@
             </div>
             <div class="card-body light-aqua-bg">
               <p class="card-text">
-                Av. Camino a Venegas #33 Col. Ejido el Retablo C.P. 76900 Corregidora, Querétaro.
+                Av. Camino a Venegas #33<br>
+                Col. Ejido el Retablo C.P. 76900<br>
+                Corregidora, Querétaro.
               </p>
             </div>
             <div class="card-footer">
-              <a href="tel:4422342228" class="card-link"><i class="fas fa-phone"></i>&nbsp; (442) 384-0470</a>
-              <a href="tel:4422199314" class="card-link"><i class="fab fa-whatsapp"></i>&nbsp; (442) 186-4149</a>
+              <a href="tel:4423840470" class="card-link"><i class="fas fa-phone"></i>&nbsp; (442) 384-0470</a>
+              <a href="https://bit.ly/2W2idPC" target="_blank" class="card-link"><i class="fab fa-whatsapp"></i>&nbsp; (442) 186-4149</a>
+            </div>
+            <div class="card-footer">
+              <a href="https://goo.gl/maps/bKkc9XyKAB82" target="_blank" class="card-link"><i class="fas fa-swimming-pool"></i>&nbsp; Cómo llegar</a>
             </div>
           </div>
 
@@ -450,14 +492,110 @@
             </div>
             <div class="card-body light-blue-bg">
               <p class="card-text">
-                Paseo de la Candelaria Mz. 67 L 12 Col. Hacienda Ojo de Agua C.P. 55770 Tecámac, Edo. de México.
+                Paseo de la Candelaria Mz. 67 L 12<br>
+                Col. Hacienda Ojo de Agua C.P. 55770<br>
+                Tecámac, Edo. de México.
               </p>
             </div>
             <div class="card-footer">
-              <a href="tel:4422342228" class="card-link"><i class="fas fa-phone"></i>&nbsp; (442) 5932-2150</a>
-              <a href="tel:4422199314" class="card-link"><i class="fab fa-whatsapp"></i>&nbsp; (442) 1442-2046</a>
+              <a href="tel:5559322150" class="card-link"><i class="fas fa-phone"></i>&nbsp; (55) 5932-2150</a>
+              <a href="https://bit.ly/2CuJ5Pk" target="_blank" class="card-link"><i class="fab fa-whatsapp"></i>&nbsp; (55) 1442-2046</a>
+            </div>
+            <div class="card-footer">
+              <a href="https://goo.gl/maps/e54eGyUofwr" target="_blank" class="card-link"><i class="fas fa-swimming-pool"></i>&nbsp; Cómo llegar</a>
             </div>
           </div>
+
+        </div>
+      </div>
+
+      <!-- Testimoniales -->
+      <div id="testimonialesAnchor" class="anchor"></div>
+      <div id="testimoniales">
+        <div class="text-description">
+          <h1 id="testimonialesTitle" class="wow jello">Testimoniales</h1>
+        </div>
+
+        <div class="card-columns">
+
+          <div class="card p-3 light-purple-bg wow flipInY">
+            <blockquote class="blockquote mb-0 card-body">
+              <p>La mejor escuela de natación por sus actividades lúdicas y la motivación a los usuarios.</p>
+              <footer class="blockquote-footer">
+                <small class="text-muted">
+                  Alex Rojas
+                </small>
+              </footer>
+            </blockquote>
+          </div>
+
+          <div class="card p-3 light-aqua-bg wow flipInY">
+            <blockquote class="blockquote mb-0 card-body">
+              <p>Un excelente lugar para los peques, un ambiente muy sano y agradable.</p>
+              <footer class="blockquote-footer">
+                <small class="text-muted">
+                  Vico Cardoso
+                </small>
+              </footer>
+            </blockquote>
+          </div>
+
+          <div class="card p-3 light-orange-bg wow flipInY">
+            <blockquote class="blockquote mb-0 card-body">
+              <p>¡De lo mejor! Gracias a todo su personal. Mi hija tiene muy poco tiempo y muchos logros.</p>
+              <footer class="blockquote-footer">
+                <small class="text-muted">
+                  Irma Bolaños
+                </small>
+              </footer>
+            </blockquote>
+          </div>
+
+          <div class="card p-3 light-blue-bg wow flipInY">
+            <blockquote class="blockquote mb-0 card-body">
+              <p>¡Excelente escuela! Los instructores son muy atentos y se hace un ambiente agradable con los compañeros. Las instalaciones siempre están limpias; ¡el agua de la alberca y las regaderas siempre está caliente!</p>
+              <footer class="blockquote-footer">
+                <small class="text-muted">
+                  Ana Lilia Ornelas
+                </small>
+              </footer>
+            </blockquote>
+          </div>
+
+          <div class="card p-3 light-purple-bg wow flipInY">
+            <blockquote class="blockquote mb-0 card-body">
+              <p>Me encanta esta opción de deporte; en este lugar son súper amables y atentos con niños y adultos. Muchas felicidades.</p>
+              <footer class="blockquote-footer">
+                <small class="text-muted">
+                  Rebeca Villareal
+                </small>
+              </footer>
+            </blockquote>
+          </div>
+
+          <div class="card p-3 light-orange-bg wow flipInY">
+            <blockquote class="blockquote mb-0 card-body">
+              <p>¡Súper! Las albercas limpias, profesores capacitados, la gente de administración lindísima, regaderas limpias y lo mejor es que todos aprenden, hacen ejercicio y se divierten….</p>
+              <footer class="blockquote-footer">
+                <small class="text-muted">
+                  Viridiana Mendoza
+                </small>
+              </footer>
+            </blockquote>
+          </div>
+
+          <div class="card p-3 light-aqua-bg wow flipInY">
+            <blockquote class="blockquote mb-0 card-body">
+              <p>Excelente en general, desde la recepción hasta los instructores; además de instalaciones limpias, el agua a temperatura y muy limpia.</p>
+              <footer class="blockquote-footer">
+                <small class="text-muted">
+                  Emmanuel Patron
+                </small>
+              </footer>
+            </blockquote>
+          </div>
+
+
 
         </div>
       </div>
@@ -465,8 +603,8 @@
       <!-- Blog y noticias-->
       <div id="blogAnchor" class="anchor"></div>
       <div id="blog">
-        <div class="text-description wow lightSpeedIn">
-          <h1 id="blogTitle">Blog y noticias</h1>
+        <div class="text-description">
+          <h1 id="blogTitle" class="wow jello">Blog y noticias</h1>
         </div>
 
         <div class="card mb-3 shadow-sm wow fadeIn">
@@ -504,12 +642,15 @@
 
         </div>
 
-        <a href="blog" class="btn btn-purple vermas">Leer más</a>
+        <div class="text-center mt-5">
+          <a href="blog" class="btn btn-purple">Leer más</a>
+          <a href="#suscribeteAnchor" class="btn btn-purple">Suscríbete</a>
+        </div>
       </div>
 
       <!-- Contacto -->
       <div id="contactoAnchor" class="anchor"></div>
-      <div class="section contacto height100 wow fadeInUp" id="contacto">
+      <div class="contacto wow fadeInUp" id="contacto">
         <div class="container">
           <h1 id="contactoTitle" class="text-center">Contáctanos</h1>
           <form action="/contact.php" method="POST">
@@ -608,7 +749,7 @@
               </div>
             </div>
 
-            <div class="formButton">
+            <div class="formButton text-center">
               <button id="submit" name="submit" type="submit" class="btn btn-purple">Enviar Mensaje</button>
             </div>
 
@@ -622,7 +763,7 @@
     <div id="suscribeteAnchor" class="anchor"></div>
     <div class="section newsletter" id="newsletter">
       <div class="container">
-        <h1 class="text-center newsletter-h1">Suscríbete a nuestro NewsLetter</h1>
+        <h1 class="text-center newsletter-h1 wow tada">Suscríbete a nuestro NewsLetter</h1>
         <form>
           <!-- Text input-->
             <div class="form-group">
@@ -637,35 +778,47 @@
       </div>
     </div>
 
-    <!-- Instagram -->
-    <script src="https://snapwidget.com/js/snapwidget.js"></script>
-    <iframe src="https://snapwidget.com/embed/447798" class="snapwidget-widget"
-    allowTransparency="true" frameborder="0" scrolling="no"
-    style="border:none; overflow:hidden; width:100%; "></iframe>
-
-    <div class="hidden-sm hidden-xs"><img src="./assets/img/ondita.png" class="ondita"></div>
     <!-- Footer -->
-    <div class="section footer">
-      <div class="row">
-        <div class="col-md-4 col-xs-12">
-          <a href="https://www.facebook.com/OlimpusNatacion/" target="_blank">
-            <img class="social-footer" src="./assets/img/footer_fb.png"/></a>
-          <a href="https://twitter.com/OlimpusNatacion" target="_blank">
-            <img class="social-footer" src="./assets/img/footer_tw.png"/></a>
-          <a href="#" target="_blank">
-            <img class="social-footer" src="./assets/img/footer_yt.png"/></a>
-          <a href="https://www.instagram.com/olimpusnatacion/" target="_blank">
-            <img class="social-footer" src="./assets/img/footer_ins.png"/></a>
+    <div class="footer-container d-none d-md-block">
+
+      <!-- Instagram -->
+      <script src="https://snapwidget.com/js/snapwidget.js"></script>
+      <iframe src="https://snapwidget.com/embed/447798" class="snapwidget-widget"
+      allowTransparency="true" frameborder="0" scrolling="no"
+      style="border:none; overflow:hidden; width:100%;"></iframe>
+
+      <div class="footer">
+        <div class="footer-info">
+          <div class="footer-item">
+            <div>
+              <a href="https://www.facebook.com/OlimpusNatacion/" target="_blank">
+                <img class="social-footer" src="./assets/img/footer_fb.png"/></a>
+              <a href="https://twitter.com/OlimpusNatacion" target="_blank">
+                <img class="social-footer" src="./assets/img/footer_tw.png"/></a>
+              <a href="#" target="_blank">
+                <img class="social-footer" src="./assets/img/footer_yt.png"/></a>
+              <a href="https://www.instagram.com/olimpusnatacion/" target="_blank">
+                <img class="social-footer" src="./assets/img/footer_ins.png"/></a>
+            </div>
+            <div>
+              <ul class="menu-footer">
+                <li><a href="#newsletter">Suscríbete</a></li>
+                <li><a href="https://app.jackrabbitclass.com/portal/ppLogin.asp?id=528866">Log In</a></li>
+                <li><a href="preguntas_frecuentes.html">Preguntas frecuentes</a></li>
+                <li><a href="/reglamento.pdf">Reglamento</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer-item">
+            <img src="./assets/img/ussa.png" class="footer-image" alt="swim Australia">
+          </div>
+
+          <div class="footer-item">
+            <img src="./assets/img/swimlogo.png" class="footer-image-wide" alt="swim Australia">
+          </div>
         </div>
       </div>
-      <div class="row">
-          <ul class="menu-footer">
-            <li><a href="#newsletter">Suscríbete</a></li>
-            <li><a href="https://app.jackrabbitclass.com/portal/ppLogin.asp?id=528866">Log In</a></li>
-            <li><a href="/preguntas_frecuentes"><p>Preguntas frecuentes</p></a></li>
-            <li><a href="/reglamento.pdf">Reglamento</a></li>
-          </ul>
-        </div>
     </div>
 
     <!-- SCRIPTS-->
