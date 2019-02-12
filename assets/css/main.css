@@ -1025,9 +1025,39 @@ html, body {
   height: 100%;
 }
 
-#imageCover {
+#bebesCover {
   margin-top: 56px;
-  background-image: url("../img/bebes.jpg");
+  background-image: url("../img/bebes_portada.jpg");
+  min-height: 70%;
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#niniosCover {
+  margin-top: 56px;
+  background-image: url("../img/ninios_portada.jpg");
+  min-height: 70%;
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#adultosCover {
+  margin-top: 56px;
+  background-image: url("../img/adultos_portada.jpg");
+  min-height: 70%;
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#aquafitnessCover {
+  margin-top: 56px;
+  background-image: url("../img/aquafitness_portada.jpg");
   min-height: 70%;
   background-attachment: fixed;
   background-position: top;
