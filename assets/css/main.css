@@ -1025,6 +1025,10 @@ html, body {
   height: 100%;
 }
 
+.smallCover {
+  margin-top: 56px;
+}
+
 #bebesCover {
   margin-top: 56px;
   background-image: url("../img/bebes_portada.jpg");

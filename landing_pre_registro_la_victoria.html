@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Custom -->
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/cover.css">
+    <title>Pre Inscripción</title>
+  </head>
+  <body>
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column justify-content-center">
+      <main role="main" class="inner cover text-center">
+        <h1 class="cover-heading">Formulario de Pre Inscripción</h1>
+        <p class="lead">Compártenos tus datos para ponernos en contacto:</p>
+        <form action="/landing_pre_registro.php" method="post">
+          <div class="form-group">
+            <label for="nombreInput">Nombre de quien inscribe</label>
+            <input type="text" class="form-control" name="nombre" id="nombreInput">
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="form-group">
+                <label for="alumnoInput">Nombre del alumno</label>
+                <input type="text" class="form-control" name="alumno" id="alumnoInput">
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-group">
+                <label for="edadInput">Edad del alumno</label>
+                <input type="number" class="form-control" name="edad" id="edadInput" placeholder="Años">
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="WhatsAppInput">WhatsApp</label>
+            <input type="text" class="form-control" name="celular" id="WhatsAppInput">
+          </div>
+          <div class="form-group">
+            <label for="emailInput">Correo Electrónico</label>
+            <input type="text" class="form-control" name="email" id="emailInput">
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="form-group">
+                <label for="numeroClasesInput">Número de clases por día</label>
+                <input type="number" class="form-control" name="numeroClases" id="numeroClasesInput" placeholder="Clases">
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-group">
+                <label for="serviciosInput">Servicio de interés</label>
+                <select class="form-control" name="servicios" id="serviciosInput">
+                  <option selected>Servicios...</option>
+                  <option value="bebes">Bebés</option>
+                  <option value="ninios">Niños</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="mensajeInput">Mensaje</label>
+            <textarea class="form-control" name="mensaje" id="mensajeInput" rows="4">¿Dudas o comentarios?</textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn btn-lg btn-secondary">Enviar</button>
+          </div>
+          <input type="hidden" name="sucursal" value="la_victoria">
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
