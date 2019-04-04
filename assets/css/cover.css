@@ -27,7 +27,7 @@ a:hover {
 html,
 body {
   height: 100%;
-  background: url(../img/landing_bg.jpg) no-repeat center center fixed;
+  background: url(../img/landing_bg.jpg) no-repeat left top fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -94,6 +94,7 @@ body {
  * Cover
  */
 .cover {
+  margin-top: 3.0rem;
   padding: 0 1.5rem;
 }
 .cover .btn-lg {
